@@ -159,7 +159,7 @@ const skillDetails = {
     {
       skill: "Python",
       image: python,
-      description: "General-purpose programming language"
+      description: "Develop machine learning models and data manipulations"
     },
     {
       skill: "Pandas",
@@ -174,7 +174,7 @@ const skillDetails = {
     {
       skill: "Jupyter",
       image: jupyter,
-      description: "Interactive computing environment for data science"
+      description: "Interactive environment for write python programs"
     }
     // {
     //   skill:"",

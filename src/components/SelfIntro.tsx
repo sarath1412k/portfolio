@@ -1,5 +1,5 @@
 import React from "react"
-import { Card, CardBody, CardHeader, CardSubtitle, CardText, CardTitle } from "reactstrap"
+import { Card, CardBody, CardSubtitle, CardText, CardTitle } from "reactstrap"
 import { homeDetails } from "../utils/Constants"
 import { MdEmail } from "react-icons/md";
 

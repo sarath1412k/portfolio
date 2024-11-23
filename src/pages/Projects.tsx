@@ -15,9 +15,9 @@ const Projects: React.FC = () => {
                 </CardTitle>
                 <CardTitle className="technologies border p-2 rounded-2">
                   {
-                    project.technologies.map((tech) => {
+                    project.technologies.map((tech,idx) => {
                       return (
-                        <tech.icon className={`${tech.style} mx-1 fs-3`} />
+                        <tech.icon key={`${idx}+${tech.style}`} className={`${tech.style} mx-1 fs-3`} />
                       )
                     })
                   }

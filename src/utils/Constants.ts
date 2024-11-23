@@ -26,12 +26,8 @@ import pandas from "../assets/images/language/pandas.png"
 import matplotlib from "../assets/images/language/matplotlib.png"
 import jupyter from "../assets/images/language/jupyter.png"
 
-import { FaReact } from "react-icons/fa";
-import { SiRedux } from "react-icons/si";
-import { FaBootstrap } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
-import { SiMongodb } from "react-icons/si";
-import { SiMongoose } from "react-icons/si";
+import { FaReact, FaNodeJs, FaBootstrap } from "react-icons/fa";
+import { SiRedux , SiMongodb, SiMongoose} from "react-icons/si";
 
 const skillDetails = {
   frontend: [

@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'poppins';
+  src: url('./Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppins-bold';
+  src: url('./Poppins-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'growtesk';
+  src: url('./grotesk/SpaceGrotesk-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'growtesk-bold';
+  src: url('./grotesk/SpaceGrotesk-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  --main-font: 'poppins', Arial, sans-serif;
+}
+
+body {
+  font-family: var(--main-font);
+  margin: 0;
+}

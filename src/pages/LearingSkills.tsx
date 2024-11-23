@@ -1,5 +1,5 @@
 import React from "react"
-import { Card, CardHeader, CardText, CardTitle, Col, Container, Row } from "reactstrap"
+import { Card, CardText, CardTitle, Col, Container, Row } from "reactstrap"
 import { skillDetails } from "../utils/Constants"
 
 const LearningSkills: React.FC = () => {

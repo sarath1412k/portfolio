@@ -30,6 +30,7 @@ import jupyter from "../assets/images/language/jupyter.png"
 import { FaReact, FaNodeJs, FaBootstrap } from "react-icons/fa";
 import { SiRedux , SiMongodb, SiMongoose, SiTypescript} from "react-icons/si";
 
+
 const homeDetails = {
   name: "SarathKumar",
   position: "Software Engineer",
@@ -39,7 +40,7 @@ const homeDetails = {
   skills: ["React", "Node Js", "Express", "Mongo DB", "HTML", "CSS", "JavaScript"],
   interests: ["Data Science", "Machine Learning"],
   learning: ["Python (jupyter notebook)", "Pandas", "Machine Learning",],
-  homePageContent: () => `As a MERN Stack Developer with over ${homeDetails.experience} years of hands-on experience, I specialize in building dynamic, user-friendly web applications. I have a deep understanding of MongoDB, Express.js, React, and Node.js, and I'm proficient in integrating them to create full-stack solutions that meet both business and technical requirements. With a strong focus on performance, scalability, and responsive design, I am passionate about crafting seamless user experiences and delivering high-quality code. I am eager to bring my expertise to new challenges and contribute to innovative projects that drive results.`,
+  homePageContent: () => `As a MERN Stack Developer with over ${homeDetails.experience} years of experience, I specialize in building dynamic, user-friendly web applications. I have a deep understanding of MongoDB, Express.js, React, and Node.js, and I'm proficient in integrating them to create full-stack solutions that meet both business and technical requirements. With a strong focus on performance, scalability, and responsive design, I am passionate about crafting seamless user experiences and delivering high-quality code. I am eager to bring my expertise to new challenges and contribute to innovative projects that drive results.`,
 }
 
 const skillDetails = {

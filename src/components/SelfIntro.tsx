@@ -1,5 +1,5 @@
 import React from "react"
-import { Card, CardBody, CardSubtitle, CardText, CardTitle } from "reactstrap"
+import { Card, CardSubtitle, CardText, CardTitle } from "reactstrap"
 import { homeDetails } from "../utils/Constants"
 import { MdEmail } from "react-icons/md";
 
@@ -11,11 +11,9 @@ const SelfIntro: React.FC = () => {
       <CardSubtitle className="d-flex align-items-center">
         <MdEmail className="fs-3 mx-2" />
         <a className="text-dark" href={`mailto:${homeDetails.email}?subject=iInterview&body=`}>{homeDetails.email}</a></CardSubtitle>
-      <CardBody>
-        <CardText >
+        <CardText className="my-3 ls-2" >
           {homeDetails.homePageContent()}
         </CardText>
-      </CardBody>
     </Card>
   )
 }

@@ -51,7 +51,7 @@ const Layout: React.FC<any> = ({ children }) => {
           </Nav>
         </Collapse>
       </Navbar>
-      <div className="main-container d-flex flex-column flex-grow-1 mx-5">
+      <div className="main-container d-flex flex-column flex-grow-1 mx-2 mx-md-5">
         {children}
       </div>
     </Container>

@@ -40,7 +40,7 @@ const Layout: React.FC<any> = ({ children }) => {
       <Navbar expand="md" className="bg-white rounded-3 py-3 py-sm-2">
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={openSidebar} navbar>
-          <Nav navbar card className="my-2 my-sm-0">
+          <Nav navbar card className="mt-2 my-sm-0">
             {screens.map((screen: any, idx: number) =>
               <NavItem className="nav-item mx-2" key={`${idx}+${screen.path}`}>
                 <NavLink className="nav-link background-move" active={activeScreen[screen.path]} onClick={() => handleNavigate(screen.path)}>

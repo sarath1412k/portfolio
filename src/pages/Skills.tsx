@@ -8,7 +8,7 @@ const Skills: React.FC = () => {
         <CardHeader className="fw-bold text-white my-1">Frontend Tech</CardHeader>
         {skillDetails.frontend.map((data, idx) => {
           return (
-          <Col key={`${idx}+${data.skill}`} xl={3} className="my-3 d-flex align-items-center justify-content-center">
+          <Col key={`${idx}+${data.skill}`} xl={3} xs={6} md={4} className="my-3 d-flex align-items-center justify-content-center">
             <Card className="skill-card">
               <div className="skill-image-container border rounded-2">
                 <img className="skill-image" src={data.image} alt={`${data.skill}-logo`} />
@@ -23,7 +23,7 @@ const Skills: React.FC = () => {
       <Row className="my-5">
         <CardHeader className="fw-bold text-white my-1">Backend Tech</CardHeader>
         {skillDetails.backend.map((data, idx) => {
-          return (<Col key={`${idx}+${data.skill}`} xl={3} className="my-3 d-flex align-items-center justify-content-center">
+          return (<Col key={`${idx}+${data.skill}`} xl={3} xs={6} md={4} className="my-3 d-flex align-items-center justify-content-center">
             <Card className="skill-card">
               <div className="skill-image-container border rounded-2">
                 <img className="skill-image" src={data.image} alt={`${data.skill}-logo`} />
@@ -38,7 +38,7 @@ const Skills: React.FC = () => {
       <Row className="my-5">
         <CardHeader className="fw-bold text-white my-1">Tools</CardHeader>
         {skillDetails.tools.map((data, idx) => {
-          return (<Col key={`${idx}+${data.skill}`} xl={3} className="my-3 d-flex align-items-center justify-content-center">
+          return (<Col key={`${idx}+${data.skill}`} xl={3} xs={6} md={4} className="my-3 d-flex align-items-center justify-content-center">
             <Card className="skill-card">
               <div className="skill-image-container border rounded-2">
                 <img className="skill-image" src={data.image} alt={`${data.skill}-logo`} />
@@ -53,7 +53,7 @@ const Skills: React.FC = () => {
         <CardHeader className="fw-bold text-white my-1">Version Control</CardHeader>
         {skillDetails.versionControl.map((data, idx) => {
           return (
-            <Col xl={3} key={`${idx}+${data.skill}`} className="my-3 d-flex align-items-center justify-content-center">
+            <Col xl={3} xs={6} md={4} key={`${idx}+${data.skill}`} className="my-3 d-flex align-items-center justify-content-center">
               <Card className="skill-card">
                 <div className="skill-image-container border rounded-2">
                   <img className="skill-image" src={data.image} alt={`${data.skill}-logo`} />

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { useNavigate, useLocation } from "react-router-dom"
 import { Collapse, Container, Nav, Navbar, NavbarToggler, NavItem, NavLink } from "reactstrap"
 import './styles.css'

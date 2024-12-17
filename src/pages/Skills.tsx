@@ -5,7 +5,7 @@ const Skills: React.FC = () => {
   return (
     <Container className="my-5">
       <Row className="my-5">
-        <CardHeader className="fw-bold my-1">Frontend Tech</CardHeader>
+        <CardHeader className="fw-bold text-white my-1">Frontend Tech</CardHeader>
         {skillDetails.frontend.map((data, idx) => {
           return (
           <Col key={`${idx}+${data.skill}`} xl={3} className="my-3 d-flex align-items-center justify-content-center">
@@ -21,7 +21,7 @@ const Skills: React.FC = () => {
       </Row>
 
       <Row className="my-5">
-        <CardHeader className="fw-bold my-1">Backend Tech</CardHeader>
+        <CardHeader className="fw-bold text-white my-1">Backend Tech</CardHeader>
         {skillDetails.backend.map((data, idx) => {
           return (<Col key={`${idx}+${data.skill}`} xl={3} className="my-3 d-flex align-items-center justify-content-center">
             <Card className="skill-card">
@@ -36,7 +36,7 @@ const Skills: React.FC = () => {
       </Row>
 
       <Row className="my-5">
-        <CardHeader className="fw-bold my-1">Tools</CardHeader>
+        <CardHeader className="fw-bold text-white my-1">Tools</CardHeader>
         {skillDetails.tools.map((data, idx) => {
           return (<Col key={`${idx}+${data.skill}`} xl={3} className="my-3 d-flex align-items-center justify-content-center">
             <Card className="skill-card">
@@ -50,7 +50,7 @@ const Skills: React.FC = () => {
         })}
       </Row>
       <Row className="my-5">
-        <CardHeader className="fw-bold my-1">Version Control</CardHeader>
+        <CardHeader className="fw-bold text-white my-1">Version Control</CardHeader>
         {skillDetails.versionControl.map((data, idx) => {
           return (
             <Col xl={3} key={`${idx}+${data.skill}`} className="my-3 d-flex align-items-center justify-content-center">

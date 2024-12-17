@@ -1,16 +1,38 @@
-.layout-container{
+.layout-container {
   min-height: 100vh;
   border: 1px solid black;
 }
-.gradient-box {
-  background: linear-gradient(to right, #ff7e5f 20%,#ff747b 50%, #fe5e66 100%,#feb47b 100%);
+
+.gradient-box-home {
+  background: linear-gradient(to right, #ff7e5f 20%, #ff747b 50%, #fe5e66 100%, #feb47b 100%);
   border-radius: 10px;
 }
-.nav-item{
+
+.gradient-box-project {
+  background: linear-gradient(to right, #001f3f 20%, #003366 50%, #004080 100%);
+  border-radius: 10px;
+}
+
+.gradient-box-skill {
+  background: linear-gradient(to right, #13547a, #80d0c7);
+  border-radius: 10px;
+}
+
+.gradient-box-learning {
+  background: linear-gradient(to right, #654ea3, #eaafc8);
+  border-radius: 10px;
+}
+
+.gradient-box-experience {
+  background: linear-gradient(to right, #654ea3, #eaafc8);
+  border-radius: 10px;
+}
+
+.nav-item {
   cursor: pointer;
 }
 
-.main-container{
+.main-container {
   height: 100%;
 }
 

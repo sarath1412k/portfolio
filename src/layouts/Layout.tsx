@@ -1,13 +1,24 @@
-import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useEffect, useState } from "react"
+import { useNavigate, useLocation } from "react-router-dom"
 import { Collapse, Container, Nav, Navbar, NavbarToggler, NavItem, NavLink } from "reactstrap"
 import './styles.css'
 const Layout: React.FC<any> = ({ children }) => {
   const navigate = useNavigate()
+  const { pathname } = useLocation()
+  const cLoc = pathname.split('/')[1] || "home"
+  
   const [openSidebar, setOpenSidebar] = useState(false)
   const [activeScreen, setActiveScreen] = useState<any>({
     home: true,
   })
+
+  const bg:any = {
+    "home": "home",
+    "skills": "skill",
+    "projects": "project",
+    "experience": "experience",
+    "interests&learning": "learning"
+  }
 
   const screens = [
     { label: "Home", path: "home" },
@@ -25,13 +36,13 @@ const Layout: React.FC<any> = ({ children }) => {
   }
 
   return (
-    <Container fluid className="bg-primary gradient-box rounded-0 d-flex flex-column justify-content-center py-3 px-2 layout-container">
-      <Navbar expand="md" className="bg-white rounded-3">
+    <Container fluid className={`bg-primary gradient-box-${bg[cLoc]} rounded-0 d-flex flex-column justify-content-center py-3 px-2 layout-container`}>
+      <Navbar expand="md" className="bg-white rounded-3 py-3 py-sm-2">
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={openSidebar} navbar>
-          <Nav navbar card>
+          <Nav navbar card className="my-2 my-sm-0">
             {screens.map((screen: any, idx: number) =>
-              <NavItem className="nav-item mx-2 rounded-3 border" key={`${idx}+${screen.path}`}>
+              <NavItem className="nav-item mx-2" key={`${idx}+${screen.path}`}>
                 <NavLink className="nav-link background-move" active={activeScreen[screen.path]} onClick={() => handleNavigate(screen.path)}>
                   {screen.label}
                 </NavLink>

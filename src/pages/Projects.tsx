@@ -4,7 +4,7 @@ import { projectDetails } from "../utils/Constants";
 
 const Projects: React.FC = () => {
   return (
-    <Container className="my-5 border rounded-3">
+    <Container fluid={"md"} className="my-5">
       <Row className="my-4 justify-content-center mx-auto">
         {projectDetails.map((project,idx) => {
           return (

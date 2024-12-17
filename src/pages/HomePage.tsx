@@ -6,7 +6,7 @@ import "./styles.css"
 
 const HomePage: React.FC = () => {
   return (
-    <Container fluid className="my-auto border border-light rounded-3">
+    <Container fluid className="my-auto border-light rounded-3">
       <Row fluid className="d-flex flex-column-reverse flex-xl-row gradient-box">
         <Col xl={7} className="d-flex justify-content-center align-items-center px-4">
           <SelfIntro />

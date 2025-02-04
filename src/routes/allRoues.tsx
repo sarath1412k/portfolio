@@ -6,7 +6,7 @@ import Projects from "../pages/Projects";
 import Skills from "../pages/Skills";
 import { Navigate } from "react-router-dom";
 
-const scrollableRoutes = () => {
+export const scrollableRoutes = () => {
 
   const routeData = [
     {key:"",component:<HomePage/>},

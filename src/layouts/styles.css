@@ -1,10 +1,13 @@
 .layout-container {
   min-height: 100vh;
-  border: 1px solid black;
+}
+
+.navbar-container{
+  width: 96%;
 }
 
 .gradient-box-home {
-  background: linear-gradient(to right, #ff7e5f 20%, #ff747b 50%, #fe5e66 100%, #feb47b 100%);
+  background: linear-gradient(to right,#fc466b   , #3f5efb  );
   border-radius: 10px;
 }
 
@@ -54,3 +57,25 @@
   background-position: -100% 0 !important;
   color: #fff !important;
 } */
+
+@media only screen and (max-width: 480px) {
+  .gradient-box-home {
+    background: linear-gradient(to bottom,#fc466b   , #3f5efb  );
+    border-radius: 10px;
+  }
+  
+  .gradient-box-skill {
+    background: linear-gradient(to bottom, #13547a, #80d0c7);
+    border-radius: 10px;
+  }
+  
+  .gradient-box-learning {
+    background: linear-gradient(to bottom, #654ea3, #eaafc8);
+    border-radius: 10px;
+  }
+  
+  /* .gradient-box-experience {
+    background: linear-gradient(to bottom, #654ea3, #eaafc8);
+    border-radius: 10px;
+  } */
+}

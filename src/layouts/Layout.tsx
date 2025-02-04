@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useNavigate, useLocation } from "react-router-dom"
-import { Collapse, Container, Nav, Navbar, NavbarToggler, NavItem, NavLink } from "reactstrap"
+import { Collapse, Nav, Navbar, NavbarToggler, NavItem, NavLink } from "reactstrap"
 import './styles.css'
 const Layout: React.FC<any> = ({ children }) => {
   const navigate = useNavigate()
@@ -36,8 +36,8 @@ const Layout: React.FC<any> = ({ children }) => {
   }
 
   return (
-    <Container fluid className={`bg-primary gradient-box-${bg[cLoc]} rounded-0 d-flex flex-column justify-content-center py-3 px-2 layout-container`}>
-      <Navbar expand="md" className="bg-white rounded-3 py-3 py-sm-2">
+    <div  className={`gradient-box-${bg[cLoc]} rounded-0 d-flex flex-column justify-content-center align-items-center  py-3 layout-container border border-black`}>
+      <Navbar expand="md" className="bg-white rounded-3 py-3 py-sm-2 position-fixed top-0 m-3 z-2 navbar-container">
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={openSidebar} navbar>
           <Nav navbar card className="mt-2 my-sm-0">
@@ -54,7 +54,7 @@ const Layout: React.FC<any> = ({ children }) => {
       <div className="main-container d-flex flex-column flex-grow-1 mx-2 mx-md-5">
         {children}
       </div>
-    </Container>
+    </div>
   )
 }
 
